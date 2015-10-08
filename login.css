@@ -1,0 +1,15 @@
+* {
+	font-family:'Lato', sans-serif;
+	text-align:center;
+}
+h1 {
+	margin:5px;
+}
+form {
+	text-align:center;
+}
+input {
+	text-align:center;
+	padding:5px;
+	margin:5px;
+}
