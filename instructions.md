@@ -3,6 +3,8 @@
 
 ## Each team member must create a github account.
 
+## I tried to get your files from Brian's public_html, if they are wrong let me know.
+
 # Once github account is created go to: http://goo.gl/forms/W9QJ4tVYA5
 
 ### Once invited you will clone repo by:
