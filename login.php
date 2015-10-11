@@ -1,4 +1,4 @@
-<?php
+
 <html>
 <head>
 <meta charset="UTF-8">
@@ -7,7 +7,7 @@
 
 </head>
 <body>
-
+<?php
 session_start();
 error_reporting(E_ALL);
 
@@ -24,7 +24,7 @@ try {
 }
 
 $sqlq = "SELECT password FROM login WHERE user = username AND FIND_IN_SET(companyID, attachedCompanyIDs)"
-
+?>
 <form method="post" action="login.php">
 	<h1>Login</h1>
 	<input type='text' placeholder='Username' id="username"><br>
@@ -36,4 +36,3 @@ $sqlq = "SELECT password FROM login WHERE user = username AND FIND_IN_SET(compan
 </form>
 </body>
 </html>
-?>
