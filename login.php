@@ -13,8 +13,7 @@ error_reporting(E_ALL);
 
 $dsn = 'mysql:host=cgi.cs.duke.edu;port=3306;dbname=dvd4;';
 $username = 'bmp17';
-$password = 'UtQQUq7qx7SA
-';
+$password = 'UtQQUq7qx7SA';
 
 
 try {
