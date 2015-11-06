@@ -1,5 +1,4 @@
 <head>
-<title>Home</title>
 </head>
 <?php
 	$current_page = "index";

@@ -1,5 +1,4 @@
 <head>
-<title>Post</title>
 <link rel="stylesheet" href="formstyle.css">
 </head>
 <?php
@@ -12,37 +11,42 @@
 		<h1> Post New Item </h1>
 	</div>
 	<div>
-	<form>
-  		Post Title:
-  		<input type="text" name="title">
+	<form id="post">
+		<div id="pad">
+  		<label>Post Title:</label>
+  		<input class="input-text" type="text" name="title" required>
   		<br>
+		<br>
+  		<label>Item Description:</label>
+  		<textarea class="input-text" type ="text" id="description"></textarea>
   		<br>
-  		Item Description:
-  		<input type ="text" name="description" style="width:200px; height:50px;">
+		<br>
+  		<label>Price:</label>
+  		<input class="input-text" type="number" name="price" required>
   		<br>
-  		<br>
-  		<br>
-  		Price:
-  		<input type="number" name="price">
-  		<br>
-  		<br>
-		Suggested gender of costume:
-		<input type="radio" name="sex" value="male">Male
-		<input type="radio" name="sex" value="female">Female
-		<input type="radio" name="sex" value="either">Either
+		<br>
+		<label>Suggested gender:</label>
+		<div class="input-text">
+			<input type="radio" name="sex" value="male">Male
+			<input type="radio" name="sex" value="female">Female
+			<input type="radio" name="sex" value="either">Either
+		</div>
 		<br>
 		<br>
-		Item will be:
-		<input type="radio" name="sale" value="sale">For Sale
-		<input type="radio" name="sale" value="rent">For Rent
+		<label>Item will be:</label>
+		<div class="input-text">
+			<input type="checkbox" name="sale" value="sale">For Sale
+			<input type="checkbox" name="sale" value="rent">For Rent
+		</div>
 		<br>
 		<br>
-		Contact email:
-		<input type="text" name="email">
+		<label>Contact email:</label>
+		<input class="input-text" type="text" name="email" required>
 		<br>
 		<br>
 		<input type="submit" value="Submit">
 		<br>
+		</pad>
 	</form>
 	</div>
 	</div>

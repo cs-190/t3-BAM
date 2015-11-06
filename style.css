@@ -1,8 +1,13 @@
 *, *:before, *:after {
 	-moz-box-sizing: border-box; 
     -ms-box-sizing: border-box; 
-    box-sizing: border-box; 
+    box-sizing: border-box;
+	font:inherit;
     }
+html {
+	overflow:hidden;
+	min-height:100%;
+}
 body {
 	font-family: 'Lato', sans-serif; 
 	margin:0;
@@ -12,6 +17,13 @@ h1, p {
 }
 .home {
 	background-image: url('http://lorempixel.com/output/city-q-c-1600-900-4.jpg');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	background-color:black;
+	color:white;
 }
 
 .loglink {
@@ -53,6 +65,39 @@ ul li a {
 }
 ul li:hover{
 	background-color:rgba(128, 128, 128, 0.65);	
+}
+a.button {
+    text-decoration: none;
+	font-size:14px;
+}
+.btn{font:inherit;display:inline-block;padding:6px 12px;margin-bottom:0;font-size:14px;text-align:center;white-space:nowrap;vertical-align:middle;cursor:pointer;border:1px solid transparent;border-radius:4px}
+.btn-default{color:#333;background-color:#fff;border-color:#ccc}
+.btn-default:hover{color:#333;background-color:#e6e6e6;border-color:#adadad}
+.login {
+	text-align: center;
+}
+form#search {
+	text-align:center;
+	display:inline-block;
+	width:80%;
+	margin:0;
+}
+.register {
+	text-align:center;
+}
+#login-button {
+	float:right;
+}
+#search-bar {
+	padding:5px;
+	background-color:white;
+}
+#query {
+	text-align:left;
+	vertical-align:middle;
+	font-size:14px;
+	width: 85%;
+	height: 30px;
 }
 .landing {
   position: relative;
