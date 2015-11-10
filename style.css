@@ -18,7 +18,7 @@ text-decoration:none;
 	background-position: center;
 	height:300px;
 	opacity:0.6;
-	margin:none;	
+	margin:2em;	
 }
 
 #categories{
@@ -32,8 +32,7 @@ color:#000000;
 font-weight: bold;
 text-align:center;
 font-size: 3em;
-padding:8%
-text-opacity:none;
+padding:7%
 }
 
 #formal, #costumes{
@@ -41,13 +40,12 @@ height: 250px;
 width:35%;
 background-color:blue;
 float:left;
-margin-top:2em;
-border: 2px solid black
+border: 2px solid black;
 }
 
 
 #costumes{
-	margin-left:13%;
+	margin-left:16%;
 	background:url("http://www.dhresource.com/100x100/f2/albu/g1/M00/E3/B9/rBVaGFWBR_GAQspsAAAmhXX8FpU340.jpg");
 	background-repeat:no-repeat;
 	background-position: center;

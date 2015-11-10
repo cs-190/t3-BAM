@@ -21,7 +21,7 @@ require_once("header.php");
 <a href="#">
 
 <div id="costumes">
-     <p class="allclothestext">
+     <p class="categorytext">
      Costumes
       </p>
 </div>
@@ -29,9 +29,9 @@ require_once("header.php");
 
 <a href="#">
 
-<div id="formalclothes">
-     <p class="allclothestext">
-      Formal Clothes
+<div id="formal">
+     <p class="categorytext">
+      Formal
      </p>
 </div>
 

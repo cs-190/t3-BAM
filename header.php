@@ -14,6 +14,7 @@
 	<a class="<?php if($current_page == "index") {echo "active";} ?>" href="index.php">Home</a>
 	<a class="<?php if($current_page == "about") {echo "active";} ?>" href="about.php">About</a>
 	<a class="<?php if($current_page == "contact") {echo "active";} ?>" href="contact.php">Contact</a>
+	<a class="<?php if($current_page == "form") {echo "active";} ?>" href="form.php">Form</a>
 </nav>
 </div>
 </body>
