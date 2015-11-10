@@ -1,20 +1,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title></title>
+<title><?php echo $current_page;?></title>
 <link rel="stylesheet" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div id=header>
-<form id="searchbar" method="get" action="">
-	<input type="text" class="searchbar" size="21" maxlength="120">
-	<input type="submit" value="search" class="searchbutton">
+<div id="search-bar">
+<form id="search" method="get" action="search.php?go" id="searchform">
+	<input type="text" name="query" id="query" placeholder="Search">
+	<button class="btn btn-default">Search</button>
 </form>
-<nav class="navbar">
-	<a class="<?php if($current_page == "index") {echo "active";} ?>" href="index.php">Home</a>
-	<a class="<?php if($current_page == "about") {echo "active";} ?>" href="about.php">About</a>
-	<a class="<?php if($current_page == "contact") {echo "active";} ?>" href="contact.php">Contact</a>
-	<a class="<?php if($current_page == "form") {echo "active";} ?>" href="form.php">Form</a>
-</nav>
+<a href="login.php" id="login-button" class="button btn btn-default">Login</a>
 </div>
-</body>
+<nav>
+	<div class="wrap">
+	<ul>
+		<li class="<?php if($current_page == "index") {echo "active";} ?>"><a href="index.php">Home</a></li>
+		<li class="<?php if($current_page == "faq") {echo "active";} ?>"><a href="faq.php">FAQ</a></li>
+		<li class="<?php if($current_page == "swap") {echo "active";} ?>"><a href="swap.php">Swap</a></li>
+		<li class="<?php if($current_page == "post") {echo "active";} ?>"><a href="post.php">Post</a></li>
+	</ul>
+	</div>
+</nav>
+
+<!-- <input type="submit" name="submit" value="Search" id="go-search"> -->
+>>>>>>> f792dc40d507028eecacb20de7ce927fe2b5c2ea
