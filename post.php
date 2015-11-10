@@ -3,7 +3,7 @@
 </head>
 <?php
 	$current_page = "post";
-	require_once("header.php");	
+	require_once("header.php");
 ?>
 <body>
 	<div class ="post-box">
@@ -11,14 +11,14 @@
 		<h1> Post New Item </h1>
 	</div>
 	<div>
-	<form id="post">
+	<form id="post" action="postHandler.php" method="post">
 		<div id="pad">
   		<label>Post Title:</label>
   		<input class="input-text" type="text" name="title" required>
   		<br>
 		<br>
   		<label>Item Description:</label>
-  		<textarea class="input-text" type ="text" id="description"></textarea>
+  		<textarea class="input-text" type ="text" name="desc" id="description"></textarea>
   		<br>
 		<br>
   		<label>Price:</label>

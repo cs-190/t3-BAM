@@ -39,7 +39,7 @@ ul {
 	padding: 0;
 	margin: 0;
 	background-color: #B5B3B3;
-	height: 3.5em;
+	height: 3em;
 }
 
 ul li {
@@ -90,14 +90,14 @@ form#search {
 }
 #search-bar {
 	padding:5px;
-	background-color:white;
+	background-color:#001A57;
 }
 #query {
 	text-align:left;
 	vertical-align:middle;
 	font-size:14px;
 	width: 85%;
-	height: 30px;
+	height: 31px;
 }
 .landing {
   position: relative;
