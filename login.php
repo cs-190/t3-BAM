@@ -46,7 +46,9 @@
 		<button class='btn btn-default' value='Login'>Login</button><br>
 
 		<a href='forgot.html'>Forgot password?</a>
+
 		<br>
+
 		<a href='register.php'>Click here to register</a>
 
 	</form>
