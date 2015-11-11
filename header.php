@@ -16,9 +16,9 @@
 	<div class="wrap">
 	<ul>
 		<li class="<?php if($current_page == "index") {echo "active";} ?>"><a href="index.php">Home</a></li>
+		<li class="<?php if($current_page == "swap") {echo "active";} ?>"><a href="swap.php">Shop</a></li>
+		<li class="<?php if($current_page == "post") {echo "active";} ?>"><a href="post.php">Post A Costume</a></li>
 		<li class="<?php if($current_page == "faq") {echo "active";} ?>"><a href="faq.php">FAQ</a></li>
-		<li class="<?php if($current_page == "swap") {echo "active";} ?>"><a href="swap.php">Swap</a></li>
-		<li class="<?php if($current_page == "post") {echo "active";} ?>"><a href="post.php">Post</a></li>
 	</ul>
 	</div>
 </nav>

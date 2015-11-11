@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-=======
 
-
->>>>>>> f792dc40d507028eecacb20de7ce927fe2b5c2ea
 <html>
 
 <head>
@@ -63,4 +59,3 @@
 
 </html>
 
->>>>>>> f792dc40d507028eecacb20de7ce927fe2b5c2ea

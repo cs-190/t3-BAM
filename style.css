@@ -4,10 +4,7 @@
     box-sizing: border-box;
 	font:inherit;
     }
-html {
-	overflow:hidden;
-	min-height:100%;
-}
+
 body {
 	font-family: 'Lato', sans-serif; 
 	margin:0;
@@ -34,13 +31,7 @@ h1, p {
 .loglink:hover {
 	color:red
 }
-p.allclothestext{
-	color:#000000;
-	font-weight: bold;
-	text-align:center;
-	font-size: 5em;
-	padding:8%
-}
+
 
 .background {
 	background-image:url(http://static1.1.sqspcdn.com/static/f/1261868/19702436/1343944287210/OOC+2012+057.JPG?token=T%2Fx9qkutqWSReb%2FHzF1GUavFxns%3D);
@@ -61,29 +52,25 @@ a{
 }
 
 
-.allclothestext {
-	display:inline-block;
-	margin-bottom:10%;
+p.allclothestext{
+	color: red;
+	font-weight: bold;
+	text-align:left;
+	font-size: 1.5em;
+	padding:8%;
+	margin-top:5em;
+	padding-top:5em;
+	
 }
 
-#allclothes{	
-	text-align: center;
-	background-repeat:no-repeat;
-	background-position: center;
-	height:50%;
+.imagecontain{
+	margin: auto;
+	margin-top:2em;
+	width:50%;
+    height:100%; 
+    background-image: url(http://freeimages.imagestocks.in/best-pictures/vintage-clothing/backstyle-pandoras-bleach-2.png);
 	opacity:0.6;
-	margin:2em;	
-}
-
-#allclothes img {
-	height:90%;
-}
-
-
-#categories{
-    text-align: center;
-	width:100%;
-	height:300px;	
+	box-shadow: 0px 0px 3px #000000;
 }
 
 .categorytext{
@@ -94,12 +81,84 @@ a{
 	padding:7%
 }
 
-#formal, #costumes{
-height: 250px;
-width:35%;
-background-color:blue;
-float:left;
-border: 2px solid black;
+.decadecontain{
+	margin: auto;
+	margin-top:2em;
+	width:300px;
+    height:300px;  
+    background-image: url(https://s-media-cache-ak0.pinimg.com/736x/68/04/ef/6804ef66534e0cc04a291c6434e458e3.jpg);
+	opacity:0.6;
+	box-shadow: 0px 0px 3px #000000;
+	display:inline-block;
+	margin-left:3em;
+	margin-right:2em;
+}
+
+
+.countrycontain{
+	margin: auto;
+	margin-top:2em;
+	width:300px;
+    height:300px;  
+    background-image: url(http://www.outbackleather.com/images/T/570.jpg);
+	opacity:0.6;
+	box-shadow: 0px 0px 3px #000000;
+	display:inline-block;
+	margin-left:3em;
+	margin-right:2em;
+}
+
+.animalcontain{
+	margin: auto;
+	margin-top:2em;
+	width:300px;
+    height:300px;  
+    background-image: url(http://images.esellerpro.com/2466/I/231/63/MA-2528-2a.jpg);
+	opacity:0.6;
+	box-shadow: 0px 0px 3px #000000;
+	display:inline-block;
+	margin-left:3em;
+	margin-right:2em;
+}
+
+.neoncontain{
+	margin: auto;
+	margin-top:2em;
+	width:300px;
+    height:300px;  
+    background-image: url(http://product-images.imshopping.com/nimblebuy/enhance-your-costume-with-the-10ft-neon-light-rope-for-only-16-5994672-regular.jpg);
+	opacity:0.6;
+	box-shadow: 0px 0px 3px #000000;
+	display:inline-block;
+	margin-left:3em;
+	margin-right:2em;
+}
+
+
+.sportscontain{
+	margin: auto;
+	margin-top:2em;
+	width:300px;
+    height:300px;  
+    background-image: url(http://www.halloweenplayground.com/images/rasta/semi-pro-jackie-moon-costume.jpg);
+	opacity:0.6;
+	box-shadow: 0px 0px 3px #000000;
+	display:inline-block;
+	margin-left:3em;
+	margin-right:2em;
+}
+
+.tropicalcontain{
+	margin: auto;
+	margin-top:2em;
+	width:300px;
+    height:300px; 
+    background-image: url(http://images.esellerpro.com/3239/I/24/33043.jpg);
+	opacity:0.6;
+	box-shadow: 0px 0px 3px #000000;
+	display:inline-block;
+	margin-left:3em;
+	margin-right:2em;
 }
 
 .post {
@@ -111,33 +170,13 @@ input .login {
 	height: 390px;
 }
 
-#costumes{
-	margin-left:16%;
-	background:url("http://www.dhresource.com/100x100/f2/albu/g1/M00/E3/B9/rBVaGFWBR_GAQspsAAAmhXX8FpU340.jpg");
-	background-repeat:no-repeat;
-	background-position: center;
-	background-size:50%;
-	opacity:0.6;
-	padding-top: 8%;
-	margin-top:10%;
-}
-#formal{
-	margin-left:2em;
-	background:url("http://usafashionaward.com/wp-content/uploads/2013/04/Beach-Formal-Wedding-Attire.jpg");
-	background-repeat:no-repeat;
-	background-position: center;
-	background-size:50%;
-	opacity:0.6;
-	padding-top:8%;
-	margin-top:10%;
-}
 
 #header{
 	padding-top:1%;
 	padding-bottom:1%;
 	background-color: #878787;
 }
-nav.navbar a{
+nav.bar a{
 	padding-right: 5%;
 	padding-left: 5%;
 }
@@ -184,12 +223,13 @@ ul {
     list-style-type: none;
 	background-color: #B5B3B3;
 	height: 3em;
+	margin:0;
 }
 
 ul li {
 	display: inline-block;
 	height: 100%;
-	width:25%;
+	width:24%;
 	text-align:center;
 	position: relative;
 	padding: 0;
@@ -236,7 +276,7 @@ form#search {
 }
 #search-bar {
 	padding:5px;
-	background-color:#001A57;
+	background-color:#878787;
 }
 #query {
 	text-align:left;
@@ -253,9 +293,7 @@ form#search {
   color: white;
   width: 400px;
 }
-.wrap {
-  overflow: hidden;
-}
+
 .box {
   width: 20%;
   position: relative;
