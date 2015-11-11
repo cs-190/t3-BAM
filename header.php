@@ -25,4 +25,3 @@
 </nav>
 
 <!-- <input type="submit" name="submit" value="Search" id="go-search"> -->
->>>>>>> f792dc40d507028eecacb20de7ce927fe2b5c2ea
