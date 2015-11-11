@@ -4,10 +4,7 @@
     box-sizing: border-box;
 	font:inherit;
     }
-html {
-	overflow:hidden;
-	min-height:100%;
-}
+
 body {
 	font-family: 'Lato', sans-serif; 
 	margin:0;
@@ -34,21 +31,207 @@ h1, p {
 .loglink:hover {
 	color:red
 }
+
+
+.background {
+	background-image:url(http://static1.1.sqspcdn.com/static/f/1261868/19702436/1343944287210/OOC+2012+057.JPG?token=T%2Fx9qkutqWSReb%2FHzF1GUavFxns%3D);
+	background-position:center;
+}
+	
+.container {
+	text-align:center;
+	width:40%;
+	height:60%;
+	padding-top:10%;
+	box-shadow: 0px 0px 5px #000000;
+	margin-left:30%;
+	margin-top:10%;
+}
+a{
+	text-decoration:none;
+}
+
+
+p.allclothestext{
+	color: red;
+	font-weight: bold;
+	text-align:left;
+	font-size: 1.5em;
+	padding:8%;
+	margin-top:5em;
+	padding-top:5em;
+	
+}
+
+.imagecontain{
+	margin: auto;
+	margin-top:2em;
+	width:50%;
+    height:100%; 
+    background-image: url(http://freeimages.imagestocks.in/best-pictures/vintage-clothing/backstyle-pandoras-bleach-2.png);
+	opacity:0.6;
+	box-shadow: 0px 0px 3px #000000;
+}
+
+.categorytext{
+	color:#000000;
+	font-weight: bold;
+	text-align:center;
+	font-size: 3em;
+	padding:7%
+}
+
+.decadecontain{
+	margin: auto;
+	margin-top:2em;
+	width:300px;
+    height:300px;  
+    background-image: url(https://s-media-cache-ak0.pinimg.com/736x/68/04/ef/6804ef66534e0cc04a291c6434e458e3.jpg);
+	opacity:0.6;
+	box-shadow: 0px 0px 3px #000000;
+	display:inline-block;
+	margin-left:3em;
+	margin-right:2em;
+}
+
+
+.countrycontain{
+	margin: auto;
+	margin-top:2em;
+	width:300px;
+    height:300px;  
+    background-image: url(http://www.outbackleather.com/images/T/570.jpg);
+	opacity:0.6;
+	box-shadow: 0px 0px 3px #000000;
+	display:inline-block;
+	margin-left:3em;
+	margin-right:2em;
+}
+
+.animalcontain{
+	margin: auto;
+	margin-top:2em;
+	width:300px;
+    height:300px;  
+    background-image: url(http://images.esellerpro.com/2466/I/231/63/MA-2528-2a.jpg);
+	opacity:0.6;
+	box-shadow: 0px 0px 3px #000000;
+	display:inline-block;
+	margin-left:3em;
+	margin-right:2em;
+}
+
+.neoncontain{
+	margin: auto;
+	margin-top:2em;
+	width:300px;
+    height:300px;  
+    background-image: url(http://product-images.imshopping.com/nimblebuy/enhance-your-costume-with-the-10ft-neon-light-rope-for-only-16-5994672-regular.jpg);
+	opacity:0.6;
+	box-shadow: 0px 0px 3px #000000;
+	display:inline-block;
+	margin-left:3em;
+	margin-right:2em;
+}
+
+
+.sportscontain{
+	margin: auto;
+	margin-top:2em;
+	width:300px;
+    height:300px;  
+    background-image: url(http://www.halloweenplayground.com/images/rasta/semi-pro-jackie-moon-costume.jpg);
+	opacity:0.6;
+	box-shadow: 0px 0px 3px #000000;
+	display:inline-block;
+	margin-left:3em;
+	margin-right:2em;
+}
+
+.tropicalcontain{
+	margin: auto;
+	margin-top:2em;
+	width:300px;
+    height:300px; 
+    background-image: url(http://images.esellerpro.com/3239/I/24/33043.jpg);
+	opacity:0.6;
+	box-shadow: 0px 0px 3px #000000;
+	display:inline-block;
+	margin-left:3em;
+	margin-right:2em;
+}
+
+.post {
+	margin-bottom:7em;
+}
+
+input .login {
+	width: 90px; 
+	height: 390px;
+}
+
+
+#header{
+	padding-top:1%;
+	padding-bottom:1%;
+	background-color: #878787;
+}
+nav.bar a{
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+nav.navbar{
+	text-align: center;
+	font-size: 2em;
+}
+
+
+form#searchbar{
+	
+	text-align: center;
+}
+
+input.searchbar{
+	width: 35%;
+	text-align:center;
+}
+
+.links {
+	display:inline-block;
+	padding-left:500px;
+}
+
+.active {
+	color: red;
+}
+
+body {
+	margin:0;
+}
+
+.loglink {
+	display:inline-block;
+	color: white;
+}
+
+.loglink:hover {
+	color:red
+}
+
 ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
+    list-style-type: none;
 	background-color: #B5B3B3;
 	height: 3em;
+	margin:0;
 }
 
 ul li {
 	display: inline-block;
-	position: relative;
-	float: left;
 	height: 100%;
-	width:25%;
+	width:24%;
 	text-align:center;
+	position: relative;
 	padding: 0;
 	margin: 0;
 }
@@ -56,13 +239,16 @@ ul li {
 ul li a {
 	font-size: 1.5em;
 	display:block;
-	padding: .5em;
+	padding-top: .5em;
 	text-decoration:none;
 	color:white;
 }
-.active {
-	background-color:rgba(128, 128, 128, 0.65)
+
+ul li a:hover{
+	color:red;
+	
 }
+
 ul li:hover{
 	background-color:rgba(128, 128, 128, 0.65);	
 }
@@ -90,7 +276,7 @@ form#search {
 }
 #search-bar {
 	padding:5px;
-	background-color:#001A57;
+	background-color:#878787;
 }
 #query {
 	text-align:left;
@@ -107,15 +293,41 @@ form#search {
   color: white;
   width: 400px;
 }
-.wrap {
-  overflow: hidden;
-}
+
 .box {
   width: 20%;
   position: relative;
   float: left;
   padding:1px;
+  
+  * {
+	font-family:'Lato', sans-serif;
+	text-align:center;
 }
+h1 {
+	margin:5px;
+}
+form.login {
+	box-shadow: 0px 0px 5px #000000;
+	padding:5px;
+}
+input {
+	padding:5px;
+	margin:5px;
+	text-align:left;
+}
+
+input #description {
+	width:50px;
+	height:100px;
+}
+ 
+
+
+.error {
+	color:red;
+}
+
 @media only screen and (max-width : 480px) {
   .box {
 	width: 100%;

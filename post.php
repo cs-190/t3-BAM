@@ -17,6 +17,12 @@
   		<input class="input-text" type="text" name="title" required>
   		<br>
 		<br>
+		<label>Upload Image:</label>
+		<div class="input-text">
+		<input type="file" id="thefile" name="thefile">
+		</div>
+		<br>
+		<br>
   		<label>Item Description:</label>
   		<textarea class="input-text" type ="text" name="desc" id="description"></textarea>
   		<br>
