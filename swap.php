@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="style.css">
+</head>
 <?php
 	$current_page = "swap";
 	require_once("header.php");
@@ -26,8 +30,27 @@
 }
 ?>
 <body>
-<h1>Swap items</h1>
-<div class="wrap">
+
+<div class ="filter">
+<h1>Filters</h1>
+<div class ="price">
+	<h3>Price:</h3>
+	<p>$1-5</p>
+	<p>$5-10</p>
+	<p>$10-20</p>
+	<p>$20+</p>
+</div>
+<div class ="gender">
+	<h3>Gender:</h3>
+	<p>Male</p>
+	<p>Female</p>
+	<p>Unisex</p>
+</div>
+</div>
+<div class ="view">
+	<h1>Shopping XXXX</h1>
+<div>
+	<a href ="">
 
 	<?php
 		$finalitems = getItems();
@@ -35,16 +58,7 @@
 			echo $item;
 		}
 	?>
-	<img class="box" src="https://placehold.it/400x400">
-	<img class="box" src="https://placehold.it/400x400">
-	<img class="box" src="https://placehold.it/400x400">
-	<img class="box" src="https://placehold.it/400x400">
-	<img class="box" src="https://placehold.it/400x400">
-	<img class="box" src="https://placehold.it/400x400">
-	<img class="box" src="https://placehold.it/400x400">
-	<img class="box" src="https://placehold.it/400x400">
-	<img class="box" src="https://placehold.it/400x400">
-	<img class="box" src="https://placehold.it/400x400">
-
+	</a>
+</div>
 </div>
 </body>

@@ -18,7 +18,7 @@
   		<br>
 		<br>
   		<label>Item Description:</label>
-  		<textarea class="input-text" type ="text" name="desc" id="description"></textarea>
+  		<textarea class="input-text" type ="text" name="desc" id="description" required></textarea>
   		<br>
 		<br>
   		<label>Price:</label>
@@ -30,13 +30,6 @@
 			<input type="radio" name="sex" value="male">Male
 			<input type="radio" name="sex" value="female">Female
 			<input type="radio" name="sex" value="either">Either
-		</div>
-		<br>
-		<br>
-		<label>Item will be:</label>
-		<div class="input-text">
-			<input type="checkbox" name="sale" value="sale">For Sale
-			<input type="checkbox" name="sale" value="rent">For Rent
 		</div>
 		<br>
 		<br>
