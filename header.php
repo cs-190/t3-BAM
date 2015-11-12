@@ -11,9 +11,10 @@
 	<button class="btn btn-default">Search</button>
 </form>
 <a href="login.php" id="login-button" class="button btn btn-default">Login</a>
+<a href="register.php" id="login-button" class="button btn btn-default">Sign Up</a>
 </div>
 <nav>
-	<div class="wrap">
+	<div>
 	<ul>
 		<li class="<?php if($current_page == "index") {echo "active";} ?>"><a href="index.php">Home</a></li>
 		<li class="<?php if($current_page == "swap") {echo "active";} ?>"><a href="swap.php">Shop</a></li>
