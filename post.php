@@ -1,10 +1,14 @@
-<head>
-<link rel="stylesheet" href="formstyle.css">
-</head>
 <?php
 	$current_page = "post";
 	require_once("header.php");
+	if(!isset($_SESSION['login_user'])) {
+		header("Location: https://users.cs.duke.edu/~ays7/t3-BAM/login.php");
+	}
 ?>
+<head>
+<link rel="stylesheet" href="formstyle.css">
+</head>
+
 <body>
 	<div class ="post-box">
 	<div class ="post">
