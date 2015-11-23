@@ -36,11 +36,10 @@
 					"<li class='dropdown'>
 						<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-expanded='false'>"; echo $_SESSION['login_user']; echo "<span class='caret'></span></a>
 						<ul class='dropdown-menu' role='menu'>
-							<li><a href='logout.php'>Logout</a></li>
+							<li><a href='#'>Action1</a></li>
 							<li><a href='#'>Action2</a></li>
 							<li class='divider'></li>
-							<li><a href='#'>Action3</a></li>
-							<li><a href='#exit'>Action3</a></li>
+							<li><a href='logout.php'>Logout</a></li>
 						</ul>
 					</li>";
 				}
