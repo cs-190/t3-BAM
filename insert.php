@@ -23,7 +23,7 @@ $password = 'UtQQUq7qx7SA';
 
 $myusername=$_POST['username'];
 
-$mypassword=$_POST['password'];
+$mypassword=$_POST['password1'];
 
 $hashedpassword = password_hash($mypassword, PASSWORD_DEFAULT);
 
