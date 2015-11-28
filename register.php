@@ -4,6 +4,21 @@
 
 <head><link rel="stylesheet" href="register.css">
 
+<script type="text/javascript" src="jquery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#feedback').load('check.php').show();
+
+	$('#username_input').keyup(function() {
+	  $.post('check.php', { username: form.username.value },
+	  function(result)  {
+	  	$('#feedback').html(result).show();
+	  	});
+	});
+});
+</script>
+
 </head>
 
 <body>
@@ -94,7 +109,7 @@ function test_input($data) {
 
 		<h1> Register To Create An Account </h1>
 
-	<form method="post" action="insert.php" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" onsubmit="return checkForm(this);">
+	<form name="form" method="post" action="insert.php" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" onsubmit="return checkForm(this);">
 
 	<p class="error">* required field.</p>
 
@@ -108,9 +123,10 @@ function test_input($data) {
 
   		Desired username:
 
-  		<input type="text" name="username" required>
+  		<input type="text" id="username_input" name="username" required>
 
   		<span class="error">* <?php echo $usernameErr;?></span>
+  		<div id="feedback"></div>
 
   		<br>
 
