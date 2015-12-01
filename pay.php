@@ -5,7 +5,6 @@ $seller_email = isset($_SESSION['seller_email']) ? $_SESSION['seller_email'] : '
 $item_name = isset($_SESSION['item_name']) ? $_SESSION['item_name'] : 'no';
 $item_price = isset($_SESSION['item_price']) ? $_SESSION['item_price'] : 'no';
 $test = isset($_SESSION['test']) ? $_SESSION['test'] : 'no';
-echo $test;
 $url = 'https://api.venmo.com/v1/payments';
 	$fields = array(
 		'access_token' => $test,
