@@ -2,7 +2,6 @@
 <html>
 <head>
 <link rel="stylesheet" href="swapstyle.css">
-<script src="buy.js"></script>
 </head>
 <?php
 	$current_page = "swap";
