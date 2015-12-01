@@ -1,12 +1,12 @@
 <?php
 	//$ch = curl_init();
 	// set url
-
+	$test=$_GET["access_token"];
 	$url = 'https://api.venmo.com/v1/payments';
 	$fields = array(
 		'access_token' => $test,
-		'phone' => "15555555555",
-		'amount' => 1,
+		'phone' => "9735182106",
+		'amount' => 20,
 		'note' => "hi.");
 	// use key 'http' even if you send the request to https://...
 	$options = array(

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
 
 <html>
 
@@ -24,8 +22,6 @@ $(document).ready(function() {
 
 <body>
 
-=======
->>>>>>> 6038b2d3666f11629ddb37576a53fe79e242cc2f
 <?php
 $current_page = "register";
 require_once("header.php");
@@ -39,13 +35,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    } else {
      $name = test_input($_POST["name"]);
    }
-   
+
     if (empty($_POST["username"])) {
      $usernameErr = "Name is required";
    } else {
      $username = test_input($_POST["username"]);
    }
-   
+
    if (empty($_POST["password"])) {
      $passwordErr = "Password is required";
    } else {
@@ -56,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    } else {
      $email = test_input($_POST["email"]);
    }
-     
+
 }
 
 function test_input($data) {
@@ -66,8 +62,6 @@ function test_input($data) {
    return $data;
 }
 ?>
-
-<<<<<<< HEAD
 	<div>
 
 	<div class ="register">
@@ -103,17 +97,17 @@ function test_input($data) {
   		<span class ="match"> Passwords must contain at least six characters, and include an uppercase, and lowercase letter and a number </span>
 
   		<br>
-  		
+
   		Re-Enter Password:
-  		
+
 
   		<input type ="password" name="password2" required>
 
   		<span class="error">* <?php echo $passwordErr;?></span>
-  		
+
 
   		<br>
-  	
+
   	<script type="text/javascript">
 
   		function checkPassword(str){
@@ -171,6 +165,3 @@ function test_input($data) {
 </body>
 
 </html>
-
-=======
->>>>>>> 6038b2d3666f11629ddb37576a53fe79e242cc2f

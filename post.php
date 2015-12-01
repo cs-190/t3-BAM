@@ -2,14 +2,14 @@
 	$current_page = "post";
 	require_once("header.php");
 	if(!isset($_SESSION['login_user'])) {
-		header("Location: https://users.cs.duke.edu/~ays7/t3-BAM/login.php");
+		header("Location:login.php");
 	}
 ?>
 
 <body>
 	<div class="container">
 	<h1>Post New Item</h1>
-	<form id="post" role="form" action="postHandler.php" method="post">
+	<form id="post" role="form" action="postHandler.php" method="post" enctype="multipart/form-data">
 		<div class="form-group">
   		<label>Post Title:</label>
 		<input type="text" class="form-control" name="title" required>
@@ -22,6 +22,10 @@
   		<label>Price:</label>
   		<input type="number" class="form-control" name="price" required>
   		</div>
+			<div class="form-group">
+	  		<label>Image:</label>
+	  		<input type="file" name="image" />
+	  		</div>
 		<div class="form-group">
 		<label>Suggested gender:</label>
 		<label class="radio-inline">
