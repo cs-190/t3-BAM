@@ -6,9 +6,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="navbarstyle.css">
-<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 <!-- jQuery -->
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>	
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 </head>
@@ -22,7 +21,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="index.php">Swap</a>
+			<a class="navbar-brand" href="index.php">The Swap</a>
 		</div>
 		<div class="collapse navbar-collapse" id="navbar">
 			<ul class="nav navbar-nav navbar-right">
@@ -33,7 +32,7 @@
 				if(!isset($_SESSION['login_user'])){
 				echo "<li><a href='login.php' id='login-button' class="; if($current_page == "login") {echo "active";} echo ">Login/Sign up</a></li>";
 				} else {
-					echo 
+					echo
 					"<li class='dropdown'>
 						<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-expanded='false'>"; echo $_SESSION['login_user']; echo "<span class='caret'></span></a>
 						<ul class='dropdown-menu' role='menu'>
@@ -45,8 +44,9 @@
 				}
 				?>
 			</ul>
-			<form class="navbar-form navbar-right search-form" role="search">
-				<input type="text" class="form-control" placeholder="Search" />
+			<form class="navbar-form navbar-right search-form" role="search" method ="post" action="searchbar.php">
+				<input type="text" class="form-control" name="query" placeholder="Search" />
+				<button class="btn btn-default" value="search">Search</button>
 			</form>
 		</div>
 	</div>

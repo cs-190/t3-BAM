@@ -18,6 +18,5 @@
 	Price: <?php  echo $item_price;?><br>
 	<a href="pay.php">Submit</a>
 </div>
-
 </body>
 </html>

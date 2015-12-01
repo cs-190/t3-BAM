@@ -21,7 +21,7 @@ try {
     }
     if(password_verify($pass, $check)){
       echo "Good login";
-      header( "refresh:2; url=index.php" );
+      header( "refresh:2; url=index.php?user=$user" );
     }
     else{
       echo "bad login";
@@ -31,3 +31,4 @@ catch(PDOException $e)
     {
     echo $sql . "<br>" . $e->getMessage();
     }
+?>
