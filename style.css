@@ -13,115 +13,6 @@ h1, p {
 	margin: 10px;
 }
 
-p.allclothestext{
-	color: red;
-	font-weight: bold;
-	text-align:left;
-	font-size: 1.5em;
-	padding:8%;
-	margin-top:5em;
-	padding-top:5em;
-	
-}
-.imagecontain{
-	margin: auto;
-	margin-top:2em;
-	width:50%;
-    height:100%; 
-    background-image: url(http://freeimages.imagestocks.in/best-pictures/vintage-clothing/backstyle-pandoras-bleach-2.png);
-	opacity:0.6;
-	box-shadow: 0px 0px 3px #000000;
-}
-
-.categorytext{
-	color:#000000;
-	font-weight: bold;
-	text-align:center;
-	font-size: 3em;
-	padding:7%
-}
-
-.decadecontain{
-	margin: auto;
-	margin-top:2em;
-	width:300px;
-    height:300px;  
-    background-image: url(https://s-media-cache-ak0.pinimg.com/736x/68/04/ef/6804ef66534e0cc04a291c6434e458e3.jpg);
-	opacity:0.6;
-	box-shadow: 0px 0px 3px #000000;
-	display:inline-block;
-	margin-left:3em;
-	margin-right:2em;
-}
-
-
-.countrycontain{
-	margin: auto;
-	margin-top:2em;
-	width:300px;
-    height:300px;  
-    background-image: url(http://www.outbackleather.com/images/T/570.jpg);
-	opacity:0.6;
-	box-shadow: 0px 0px 3px #000000;
-	display:inline-block;
-	margin-left:3em;
-	margin-right:2em;
-}
-
-.animalcontain{
-	margin: auto;
-	margin-top:2em;
-	width:300px;
-    height:300px;  
-    background-image: url(http://images.esellerpro.com/2466/I/231/63/MA-2528-2a.jpg);
-	opacity:0.6;
-	box-shadow: 0px 0px 3px #000000;
-	display:inline-block;
-	margin-left:3em;
-	margin-right:2em;
-}
-
-.neoncontain{
-	margin: auto;
-	margin-top:2em;
-	width:300px;
-    height:300px;  
-    background-image: url(http://product-images.imshopping.com/nimblebuy/enhance-your-costume-with-the-10ft-neon-light-rope-for-only-16-5994672-regular.jpg);
-	opacity:0.6;
-	box-shadow: 0px 0px 3px #000000;
-	display:inline-block;
-	margin-left:3em;
-	margin-right:2em;
-}
-
-
-.sportscontain{
-	margin: auto;
-	margin-top:2em;
-	width:300px;
-    height:300px;  
-    background-image: url(http://www.halloweenplayground.com/images/rasta/semi-pro-jackie-moon-costume.jpg);
-	opacity:0.6;
-	box-shadow: 0px 0px 3px #000000;
-	display:inline-block;
-	margin-left:3em;
-	margin-right:2em;
-}
-
-.tropicalcontain{
-	margin: auto;
-	margin-top:2em;
-	width:300px;
-    height:300px; 
-    background-image: url(http://images.esellerpro.com/3239/I/24/33043.jpg);
-	opacity:0.6;
-	box-shadow: 0px 0px 3px #000000;
-	display:inline-block;
-	margin-left:3em;
-	margin-right:2em;
-}
-
-
 .filter{
 	font-size:1.3em;
 	display:inline-block;
@@ -183,13 +74,6 @@ p .error {
 	color:#ff0000;
 }
 
-.login {
-	text-align: center;
-}
-.register {
-	text-align:center;
-}
-
 .match {
 	font-size:0.8em;
 }
@@ -207,11 +91,7 @@ p .error {
   position: relative;
   float: left;
   padding:1px;
-  
-  * {
-	font-family:'Lato', sans-serif;
-	text-align:center;
-}
+
 h1 {
 	margin:5px;
 }

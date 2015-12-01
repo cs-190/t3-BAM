@@ -5,52 +5,41 @@
 		header("Location: https://users.cs.duke.edu/~ays7/t3-BAM/login.php");
 	}
 ?>
-<head>
-<link rel="stylesheet" href="formstyle.css">
-</head>
 
 <body>
-	<div class ="post-box">
-	<div class ="post">
-		<h1> Post New Item </h1>
-	</div>
-	<div>
-	<form id="post" action="postHandler.php" method="post">
-		<div id="pad">
+	<div class="container">
+	<h1>Post New Item</h1>
+	<form id="post" role="form" action="postHandler.php" method="post">
+		<div class="form-group">
   		<label>Post Title:</label>
-  		<input class="input-text" type="text" name="title" required>
-  		<br>
-		<br>
-		<label>Upload Image:</label>
-		<div class="input-text">
-		<input type="file" id="thefile" name="thefile">
-		</div>
-		<br>
-		<br>
-  		<label>Item Description:</label>
-  		<textarea class="input-text" type ="text" name="desc" id="description" required></textarea>
-  		<br>
-		<br>
+		<input type="text" class="form-control" name="title" required>
+  		</div>
+		<div class="form-group">
+		<label>Item Description:</label>
+  		<textarea type="text" class="form-control" name="desc" id="description" required></textarea>
+  		</div>
+		<div class="form-group">
   		<label>Price:</label>
-  		<input class="input-text" type="number" name="price" required>
-  		<br>
-		<br>
+  		<input type="number" class="form-control" name="price" required>
+  		</div>
+		<div class="form-group">
 		<label>Suggested gender:</label>
-		<div class="input-text">
-			<input type="radio" name="sex" value="male">Male
-			<input type="radio" name="sex" value="female">Female
-			<input type="radio" name="sex" value="either">Either
+		<label class="radio-inline">
+		   <input type="radio" name="sex" value="male">Male
+		</label>
+		<label class="radio-inline">
+		  <input type="radio" name="sex" value="female">Female
+		</label>
+		<label class="radio-inline">
+		  <input type="radio" name="sex" value="either">Either
+		</label>
 		</div>
-		<br>
-		<br>
+		<div class="form-group">
 		<label>Contact email:</label>
-		<input class="input-text" type="text" name="email" required>
+		<input type="text" class="form-control" name="email" required>
+		</div>
+		<button class='btn btn-default' value="Submit">Submit</button>
 		<br>
-		<br>
-		<input type="submit" value="Submit">
-		<br>
-		</pad>
 	</form>
-	</div>
 	</div>
 </body>

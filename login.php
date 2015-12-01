@@ -6,60 +6,53 @@
 ?>
 
 <html>
-<head>
-<meta charset="UTF-8">
-<link rel='stylesheet' href='style.css'>
-<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-
-</head>
 <body>
-
-<div class ="background">
+<br>
 <div class ="container">
-	<div class ="login">
-		<h1> Login </h1>
-	</div>
+<div class="col-md-6">
+<div class="panel panel-default">
+<div class="panel-body">
+	<h1>Login</h1>
 	<div>
-	<form id="login" class ="login" method="post" action="loginHandle.php">
-		<input type='text' name="username" placeholder='Username' id="username"><br>
-		<input type='password' name="password" placeholder='Password' id="password"><br>
-		<label><input type='checkbox'>Remember me</label><br>
+	<form id="login" method="post" action="loginHandle.php">
+		<div class="form-group">
+		<label>Username:</label> 
+		<input type="text" class="form-control" name="username" placeholder='Username' id="username">
+		</div>
+		<div class="form-group">
+		<label>Password: </label>
+		<input type="password" class="form-control" name="password" placeholder='Password' id="password">
+		</div>
 		<button class='btn btn-default' value='Login'>Login</button><br>
 		<a href='forgot.html'>Forgot password?</a>
-<<<<<<< HEAD
 
-		<br>
-
-		<a href='register.php'>Click here to register</a>
-
-=======
->>>>>>> 6038b2d3666f11629ddb37576a53fe79e242cc2f
 	</form>
 	</div>
 </div>
+</div>
+</div>
 
-<div class="container">
-	<div class ="register">
-		<h1> Register To Create An Account </h1>
+<div class="col-md-6">
+<div class="panel panel-default">
+<div class="panel-body">
+	<h1>Register To Create An Account</h1>
 	<form method="post" action="insert.php" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" onsubmit="return checkForm(this);">
 	<p class="error">* required field.</p>
-		Full Name:
-		<input type="text" name="name" required>
-		<span class="error">* <?php echo $nameErr;?></span>
-		<br>
-  		Desired username:
-  		<input type="text" name="username" required>
-  		<span class="error">* <?php echo $usernameErr;?></span>
-  		<br>
-  		Password:
-  		<input type ="password" name="password1" required><br>
-  		<span class="error">* <?php echo $passwordErr;?></span>
- 		<span class ="match"> Passwords must contain at least six characters, and include an uppercase, and lowercase letter and a number </span>
-  		<br>
-		Re-Enter Password:
-  		<input type ="password" name="password2" required>
-  		<span class="error">* <?php echo $passwordErr;?></span>
-  		<br>
+	<div class="form-group">
+		<label>Full Name: <span class="error">* <?php echo $nameErr;?></span></label>
+		<input type="text" class="form-control" name="name" required>
+	</div>
+	<div class="form-group">
+		<label>Desired username: <span class="error">* <?php echo $usernameErr;?></span></label>
+		<input type="text" class="form-control" name="username" required>
+	</div>
+	<div class="form-group">
+	<label>Password: <span class="error">* <?php echo $passwordErr;?></span><br>
+	<span class ="match"> Passwords must contain at least six characters, and include an uppercase, and lowercase letter and a number </span>
+	</label>
+	<input type="password" class="form-control" name="password1" required><br>
+	<label>Re-Enter Password: <span class="error">* <?php echo $passwordErr;?></span></label>
+	<input type="password" class="form-control" name="password2" required>
   	<script type="text/javascript">
   		function checkPassword(str){
     	var re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
@@ -92,16 +85,18 @@
     return true;
   		}
 	</script>
-		Email:
-		<input type="text" name="email" required>
-		<span class="error">* <?php echo $emailErr;?></span>
-		<br>
-		<br>
-		<button class="btn btn-default" value="Submit">Submit</button>
-		<br>
+	</div>
+	<div class="form-group">
+	<label>Email: <span class="error">* <?php echo $emailErr;?></span></label>
+	<input type="text" class="form-control" name="email" required>
+	</div>
+	<button class="btn btn-default" value="Submit">Submit</button>
+	<br>
 	</form>
-	</div>
-	</div>
+</div>
+</div>
+</div>
+</div>
 </body>
 </html>
 
