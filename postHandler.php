@@ -21,7 +21,7 @@ function putData(){
       VALUES ('$name', '$description','$price','$gender','$email', '$img')";
       $conn->exec($sql);
       echo "New record created successfully";
-      header("Refresh: 2; URL=https://users.cs.duke.edu/~ays7/t3-BAM/swap.php");
+      header("Location: https://users.cs.duke.edu/~mb437/t3-BAM/swap.php");
       die();
       }
   catch(PDOException $e){

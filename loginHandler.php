@@ -21,7 +21,7 @@ try {
     }
     if(password_verify($pass, $check)){
       echo "Good login";
-      header( "refresh:2; url=index.php?user=$user" );
+      header( "Location: https://users.cs.duke.edu/~mb437/t3-BAM/index.php?user=".$user );
     }
     else{
       echo "bad login";

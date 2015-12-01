@@ -26,7 +26,7 @@ try {
         if(password_verify($pass, $check)){
           echo "Good login";
           $_SESSION['login_user']=$user; // Initializing Session
-          header( "Location: https://users.cs.duke.edu/~ays7/t3-BAM/index.php" );
+          header( "Location: https://users.cs.duke.edu/~mb437/t3-BAM/index.php" );
         } else {
             echo "bad login";
         }
