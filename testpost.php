@@ -5,9 +5,6 @@ function putData(){
   $dsn = 'mysql:host=cgi.cs.duke.edu;port=3306;dbname=bmp17;';
   $username = 'bmp17';
   $password = 'UtQQUq7qx7SA';
-  if(!isset($_FILES['image'])){
-    echo "fucker";
-  }
   $name = $_POST["title"];
   $description = $_POST["desc"];
   $price= $_POST["price"];
@@ -34,10 +31,10 @@ function putData(){
 
 
 function imageGetter(){
-  if(!isset($_FILES['Im'])){
+  if(!isset($_FILES['image'])){
     echo "fuck";
   }
-   if(isset($_FILES['Im'])){
+   if(isset($_FILES['image'])){
      $errors= array();
      $file_name = $_FILES['image']['name'];
      $file_size =$_FILES['image']['size'];

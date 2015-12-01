@@ -18,6 +18,10 @@
   		<label>Item Description:</label>
   		<textarea type="text" class="form-control" name="desc" id="description" required></textarea>
   		</div>
+			<div class="form-group">
+	  		<label>Image:</label>
+	  		<input type="file" name="image" />
+	  	</div>
 		<div class="form-group">
   		<label>Price:</label>
   		<input type="number" class="form-control" name="price" required>
