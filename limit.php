@@ -16,7 +16,7 @@ try {
     // set the PDO error mode to exception
     //$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     if(!isset($_SESSION["gender"])){
-      $search_sql= 'SELECT * FROM Items WHERE price >'.$_GET["lower"].' AND price <'.$_GET["upper"];
+      $search_sql= "SELECT * FROM Items WHERE price >'".$_GET["lower"]."' AND price <'".$_GET["upper"]."'";
     }
     else{
       $search_sql= "SELECT * FROM Items WHERE price >'".$_GET["lower"]."' AND price <'".$_GET["upper"]."' AND gender='".$_SESSION["gender"]."'";
