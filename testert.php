@@ -2,7 +2,7 @@
 	$current_page = "post";
 	require_once("header.php");
 	if(!isset($_SESSION['login_user'])) {
-		header("Location: https://users.cs.duke.edu/~ays7/t3-BAM/login.php");
+		header("Location: login.php");
 	}
 ?>
 

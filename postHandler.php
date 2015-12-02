@@ -21,7 +21,7 @@ function putData(){
       VALUES ('$name', '$description','$price','$gender','$email', '$img')";
       $conn->exec($sql);
       echo "New record created successfully";
-      header("Refresh: 2; URL=https://users.cs.duke.edu/~ays7/t3-BAM/swap.php");
+      header("Location: swap.php");
       die();
       }
   catch(PDOException $e){
@@ -33,7 +33,7 @@ function putData(){
 
 function imageGetter(){
   if(!isset($_FILES['image'])){
-    echo "fuck";
+    echo " ";
   }
   echo $_FILES['image'];
    if(isset($_FILES['image'])){

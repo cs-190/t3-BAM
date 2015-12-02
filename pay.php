@@ -50,7 +50,7 @@
 		unset($_SESSION['item_price']);
 		unset($_SESSION['item_name']);
 		unset($_SESSION['seller_email']);
-		header("Refresh: 2; URL=https://users.cs.duke.edu/~ays7/t3-BAM/swap.php");
+		header("Location: swap.php");
       	die();
 	} else {
 		echo "bad request";
