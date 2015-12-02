@@ -6,10 +6,21 @@ function putData(){
   $username = 'bmp17';
   $password = 'UtQQUq7qx7SA';
   $name = $_POST["title"];
+  $name = stripslashes($name);
+  $name = mysql_real_escape_string($name);
   $description = $_POST["desc"];
+  $description = stripslashes($description);
+  $description = mysql_real_escape_string($description);
+  echo $description;
   $price= $_POST["price"];
+  $price = stripslashes($price);
+  $price = mysql_real_escape_string($price);
   $gender= $_POST["sex"];
+  $gender = stripslashes($gender);
+  $gender = mysql_real_escape_string($gender);
   $email=$_POST["email"];
+  $email = stripslashes($email);
+  $email = mysql_real_escape_string($email);
 
   try {
       $conn = new PDO($dsn, $username, $password);
