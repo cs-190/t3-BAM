@@ -1,8 +1,9 @@
 <?php
   	$current_page = "login";
   	require_once("header.php");
-	require_once("register.php");
-	if(isset($_SESSION['login_user'])) {header( "Location: https://users.cs.duke.edu/~mb437/t3-BAM/index.php" );}
+	if(isset($_SESSION['login_user'])) {
+    header( "Location: index.php" );
+  }
 ?>
 
 <html>
@@ -16,7 +17,7 @@
 	<div>
 	<form id="login" method="post" action="loginHandle.php">
 		<div class="form-group">
-		<label>Username:</label> 
+		<label>Username:</label>
 		<input type="text" class="form-control" name="username" placeholder='Username' id="username">
 		</div>
 		<div class="form-group">
@@ -24,6 +25,8 @@
 		<input type="password" class="form-control" name="password" placeholder='Password' id="password">
 		</div>
 		<button class='btn btn-default' value='Login'>Login</button><br>
+		<a href='forgot.html'>Forgot password?</a>
+
 	</form>
 	</div>
 </div>
@@ -97,4 +100,3 @@
 </div>
 </body>
 </html>
-
