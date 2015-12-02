@@ -6,6 +6,9 @@
 <?php
 	$current_page = "swap";
 	require_once("header.php");
+	if(isset($_SESSION["lower"])) {unset($_SESSION["lower"]);}
+	if(isset($_SESSION["upper"])) {unset($_SESSION["upper"]);}
+	if(isset($_SESSION["gender"])) {unset($_SESSION["gender"]);}
 	//if (isset($_POST['submit'])) {
 	//	$submit = $_POST['submit'];
 	//	if($submit == "submit" )
@@ -64,18 +67,17 @@
             <div class="col-md-3">
                 <p class="lead">Price</p>
                 <div class="list-group">
-									<a href="limit.php?upper=5&lower=0" class="list-group-item">$1-5</a>
-									<a href="limit.php?upper=10&lower=4.99" class="list-group-item">$5-10</a>
-									<a href="limit.php?upper=20&lower=9.99" class="list-group-item">$10-20</a>
-									<a href="limit.php?upper=5000&lower=19.99" class="list-group-item">$20+</a>
+					<a href="limit.php?upper=5&lower=0" class="list-group-item">$1-5</a>
+					<a href="limit.php?upper=10&lower=4.99" class="list-group-item">$5-10</a>
+					<a href="limit.php?upper=20&lower=9.99" class="list-group-item">$10-20</a>
+					<a href="limit.php?upper=5000&lower=19.99" class="list-group-item">$20+</a>
                 </div>
 				<p class="lead">Gender</p>
                 <div class="list-group">
-									<a href="gender.php?gen=male" class="list-group-item">Male</a>
-									<a href="gender.php?gen=female" class="list-group-item">Female</a>
-									<a href="gender.php?gen=either" class="list-group-item">Unisex</a>
+					<a href="gender.php?gen=male" class="list-group-item">Male</a>
+					<a href="gender.php?gen=female" class="list-group-item">Female</a>
+					<a href="gender.php?gen=either" class="list-group-item">Unisex</a>
                 </div>
-								<a href="undo.php" class="list-group-item">Clear Filters</a>
             </div>
 
             <div class="col-md-9">
