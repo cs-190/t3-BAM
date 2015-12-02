@@ -74,7 +74,7 @@ function output($name,$description,$price, $image){
                     <a href="gender.php?gen=female" class="list-group-item">Female</a>
                     <a href="gender.php?gen=either" class="list-group-item">Unisex</a>
                   </div>
-                  <a href="undo.php" class="list-group-item">UNDOOOO</a>
+                  <a href="undo.php" class="list-group-item">Clear Filters</a>
               </div>
 
               <div class="col-md-9">
