@@ -8,14 +8,13 @@ $password = 'UtQQUq7qx7SA';
 
 $user = $_POST["username"];
 $pass = $_POST["password"];
-// To protect MySQL injection for Security purpose
+
 $user = stripslashes($user);
 $pass = stripslashes($pass);
 $user = mysql_real_escape_string($user);
 $pass = mysql_real_escape_string($pass);
 try {
     $conn = new PDO($dsn, $username, $password);
-    // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $sql = "SELECT password FROM Users WHERE username = :user LIMIT 1";
     $ready = $conn->prepare($sql);
@@ -25,7 +24,7 @@ try {
         $check = $ready->fetchColumn(0);
         if(password_verify($pass, $check)){
           echo "Good login";
-          $_SESSION['login_user']=$user; // Initializing Session
+          $_SESSION['login_user']=$user; 
           header( "Location: index.php" );
         } else {
             echo "bad login";
